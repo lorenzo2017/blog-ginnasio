@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <link href="http://fonts.googleapis.com/css?family=Lato:400,300italic"
+        rel="stylesheet" type="text/css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+        <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+        <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css"
+        rel="stylesheet" type="text/css">
+        <link href="http://pingendo.github.io/pingendo-bootstrap/themes/default/bootstrap.css"
+        rel="stylesheet" type="text/css">
+        <script src="./ckeditor/ckeditor.js"></script>
+        <style>
+            body {
+                    background-image: url("http://www.h3dwallpapers.com/wp-content/uploads/2014/10/Night_sky-2.jpg");
+            }
+        </style>
+    </head>
+    <title>Nuovo Editor</title>
+    <body>
+        <div class="section">
+            <h2 class="text-center text-inverse">Nuovo editor di testo</h2>
+            <p class="text-center text-primary">Da questa pagina potete provare il nuovo editor di testo, una volta cliccato
+                "Aggiungi", il nuovo documento comparirà automaticamente nella vostra home
+                amministrativa, come utilizzando l'editor originale.</p>
+            <form action="http://italiano.ginnasio.net/files/?admin.pages.add"
+            method="post" class="text-center">
+                <br>
+                <p style="color:white">Titolo</p>
+                <input type="text" class="n" value="" name="title">
+                <br>
+                <script src="./ckeditor/ckeditor.js"></script>
+                <center>
+                <br>
+                <textarea id="content" name="content" cols="20" rows="10" style="height:420px;width:60%;"></textarea>
+                <script>
+                    CKEDITOR.replace( 'content' );
+                </script>
+                <br>
+                <br>
+                <input type="submit" value="aggiungi" name="add">
+              </center>
+            </form>
+        </div>
+    </body>
+
+</html>
